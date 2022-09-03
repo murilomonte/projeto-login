@@ -36,7 +36,7 @@ main {
 #div-imagem {
     border-radius: 20px 20px 0px 0px;
     height: 260px;
-    background: black url(./imagens/imagem-login.jpg) center center no-repeat;
+    background: black url(imagens/imagem-login.jpg) center center no-repeat;
     background-size: cover;
 }
 
