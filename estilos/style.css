@@ -100,7 +100,7 @@ input {
 }
 
 .material-icons.md-15 {
-    color: #abe9b3;
+    color: #89d393;
     font-size: 15px;
 }
 
@@ -113,27 +113,28 @@ span {
     border-radius: 10px;
     height: 50px;
     width: 100%;
-    border: solid 2px #abe9b3;
+    border: solid 2px #89d393;
     cursor: pointer;
     padding: 8px;
+    font-size: 1em;
 }
 
 
 .button.m1 {
-    background-color: #abe9b3;
+    background-color: #89d393;
     color: white;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .button.m1:hover {
-    background-color: #8ccf95;
+    background-color: #73b47b;
     border: solid 2px #8ccf95;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-size: 0.8em;
 }
 
 a:visited {
@@ -143,11 +144,14 @@ a:visited {
 .button.m2 {
     display: block;
     width: 100%;
+    font-weight: bold;
+    color: #89d393;
 }
 
 .button.m2:hover {
     background-color: #c0f8c7;
     border: solid 2px #c0f8c7;
+    color: #5c9b64;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
