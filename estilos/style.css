@@ -26,6 +26,7 @@ main {
 
     margin: auto;
     text-align: center;
+    min-width: 320px;
     max-width: 350px;
     background-color: white;
     border-radius: 20px;
@@ -51,6 +52,7 @@ h2, p {
 
 h2 {
     font-family: 'Montserrat', sans-serif;
+    color: #f5c2e7;
 }
 
 p {
@@ -78,7 +80,7 @@ input {
     padding-left: 10px;
     background-color: white;
     height: 30px;
-    width: 230px;
+    min-width: 200px;
     margin: 0px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -97,7 +99,7 @@ span {
     text-align: center;
     border-radius: 10px;
     height: 30px;
-    border: solid 2px #a6e3a1;
+    border: solid 2px #abe9b3;
 }
 
 .button > input {
@@ -106,10 +108,11 @@ span {
 }
 
 .button.m1 {
-    background-color: #a6e3a1;
+    background-color: #abe9b3;
 }
 
-#mail-icon {
-    color: #a6e3a1;
+.material-icons.md-15 {
+    color: #abe9b3;
+    font-size: 15px;
 }
 
