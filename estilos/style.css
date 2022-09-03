@@ -5,53 +5,62 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 html, body {
     width: 100vw;
     height: 100vh;
-    position: relative;
+
 }
 
 body {
-    /*background-color: rgb(253, 215, 253);*/
     background-color: #f2cdcd;
 }
 
 main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 
     margin: auto;
     text-align: center;
-    min-width: 320px;
-    max-width: 350px;
+    width: 320px;
     background-color: white;
     border-radius: 20px;
 
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 #div-imagem {
-    border-radius: 20px 20px 0px 0px;
+    display: block;
     height: 260px;
     background: black url(../imagens/imagem-login.jpg) center center no-repeat;
     background-size: cover;
 }
 
 #div-conteudo {
-    padding: 30px;
+    display: block;
+    padding: 25px;
 }
 
 h2, p {
     margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
     color: #f5c2e7;
 }
 
@@ -80,15 +89,19 @@ input {
     padding-left: 10px;
     background-color: white;
     height: 30px;
-    min-width: 200px;
+    width: 85%;
     margin: 0px;
     border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .material-icons.md-24 {
     font-size: 24px;
     color: white;
+}
+
+.material-icons.md-15 {
+    color: #abe9b3;
+    font-size: 15px;
 }
 
 span {
@@ -98,21 +111,95 @@ span {
 .button {
     text-align: center;
     border-radius: 10px;
-    height: 30px;
+    height: 50px;
+    width: 100%;
     border: solid 2px #abe9b3;
-}
-
-.button > input {
-    vertical-align: middle;
+    cursor: pointer;
     padding: 8px;
 }
 
+
 .button.m1 {
     background-color: #abe9b3;
+    color: white;
+    margin-bottom: 10px ;
 }
 
-.material-icons.md-15 {
-    color: #abe9b3;
-    font-size: 15px;
+.button.m1:hover {
+    background-color: #8ccf95;
+    border: solid 2px #8ccf95;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+}
+
+a:visited {
+    color: black;
+}
+
+.button.m2 {
+    display: block;
+    width: 100%;
+}
+
+.button.m2:hover {
+    background-color: #c0f8c7;
+    border: solid 2px #c0f8c7;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section {
+        min-width: 680px;
+        height: 390px;
+    }
+
+    #div-imagem {
+        float: left;
+        width: 35%;
+        height: 100%;
+    }
+
+    #div-conteudo {
+        float: right;
+        width: 65%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        min-width: 900px;
+        height: 450px;
+    }
+
+    #div-imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #div-conteudo {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        margin: 20px 0px;
+    }
+
+    .button {
+        height: 40px;
+    }
+
+    .button.m1 {
+        margin-bottom: 20px;
+    }
+}
