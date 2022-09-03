@@ -10,6 +10,7 @@
 html, body {
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
 body {
@@ -20,9 +21,8 @@ body {
 main {
     position: absolute;
     top: 50%;
-    left: 50px;
-
-    transform: translate(50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     margin: auto;
     text-align: center;
