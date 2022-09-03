@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    /*background-color: rgb(253, 215, 253);*/
+    background-color: #f2cdcd;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+
+    transform: translate(50%, -50%);
+
+    margin: auto;
+    text-align: center;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
+}
+
+#div-imagem {
+    border-radius: 20px 20px 0px 0px;
+    height: 260px;
+    background: black url(/imagens/imagem-login.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#div-conteudo {
+    padding: 30px;
+}
+
+h2, p {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    text-align: left;
+}
+
+form {
+    text-align: left;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.label {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f5c2e7;
+}
+
+.label > input {
+    padding-left: 10px;
+    background-color: white;
+    height: 30px;
+    width: 230px;
+    margin: 0px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+    color: white;
+}
+
+span {
+    vertical-align: middle;
+}
+
+.button {
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    border: solid 2px #a6e3a1;
+}
+
+.button > input {
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.button.m1 {
+    background-color: #a6e3a1;
+}
+
+#mail-icon {
+    color: #a6e3a1;
+}
+

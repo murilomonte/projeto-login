@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="div-imagem">
+            <!-- aqui vai uma imagem bacana -->
+        </div>
+        <div id="div-conteudo">
+            <h2>Login</h2>
+            <p>
+                Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+            </p>
+            <form action="login.php" autocomplete="on">
+
+                <p class="label">
+                    <label for="iuser">
+                        <!-- Vai ter um ícone bacana -->
+                        <span class="material-icons md-24">person</span>
+                    </label>
+                    <input type="email" name="user" id="iuser" placeholder="Seu e-mail"> <br>
+                </p>
+                
+                <p class="label">
+                    <label for="ipass">
+                        <!-- Vai ter um ícone bacana -->
+                        <span class="material-icons md-24">lock</span>
+                    </label>
+                    <input type="password" name="pass" id="ipass" placeholder="Sua senha"> <br>
+                </p>
+
+                <p class="button m1">
+                    <input type="button" value="Entrar">
+                </p>
+
+                <p class="button m2">
+                    <input type="button" value="Esqueci a senha"> <span class="material-icons" id="mail-icon">mail</span>
+                </p>
+                
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
